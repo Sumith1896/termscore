@@ -38,6 +38,15 @@ for div in mydivs:
 		s = x.split()
 		break
 
+try:
+	if s[1] == "oh no":
+		pass
+except NameError:
+	print "No Match Found"
+	sys.exit()
+else:
+	pass
+
 if ing1team1:
 	t.add_row(['I', team1, s[1], s[2][1:].split('/')[0]])
 else:
